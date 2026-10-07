@@ -379,3 +379,135 @@ footer {
 .footer-bottom a:hover {
   color: var(--color-accent);
 }
+
+/* Mobile Responsive Styles */
+
+/* Small Devices (< 768px) */
+@media (max-width: 767px) {
+  :root {
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-xxl: 2.5rem;
+    --font-size-3xl: 1.75rem;
+    --font-size-2xl: 1.5rem;
+  }
+
+  header {
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+
+  .header-content h1 {
+    font-size: var(--font-size-2xl);
+    letter-spacing: 1px;
+  }
+
+  .tagline {
+    font-size: var(--font-size-base);
+  }
+
+  /* Mobile Navigation */
+  .main-nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: var(--spacing-md);
+  }
+
+  .main-nav li {
+    margin: var(--spacing-xs) 0;
+  }
+
+  .main-nav a {
+    padding: var(--spacing-sm);
+    text-align: center;
+  }
+
+  /* Main Content */
+  main {
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+
+  main section h2 {
+    font-size: var(--font-size-xl);
+  }
+
+  /* Product Grid - Single Column */
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .card-image {
+    height: 250px;
+  }
+
+  .card-content {
+    padding: var(--spacing-md);
+  }
+
+  .card-content h3 {
+    font-size: var(--font-size-base);
+  }
+
+  /* Events Grid - Single Column */
+  .events-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .event-card {
+    border-left-width: 4px;
+  }
+
+  .event-header {
+    padding: var(--spacing-md);
+  }
+
+  .event-details {
+    padding: var(--spacing-md);
+  }
+
+  /* Footer */
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+}
+
+/* Tablet Responsive Styles */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Product Grid - Two Columns */
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Events Grid - Two Columns */
+  .events-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  main section h2 {
+    font-size: var(--font-size-2xl);
+  }
+}
+
+/* Desktop Responsive Styles */
+@media (min-width: 1024px) {
+  /* Product Grid - Three Columns */
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Events Grid - Three Columns */
+  .events-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Navigation */
+  .main-nav ul {
+    flex-direction: row;
+  }
+}
