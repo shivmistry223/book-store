@@ -549,9 +549,6 @@ select:focus {
 }
 
 /* Color Contrast Improvements */
-.main-nav a {
-  text-decoration: underline;
-}
 
 .main-nav a:hover {
   text-decoration: none;
